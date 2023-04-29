@@ -5,7 +5,7 @@ const path = require('path');
 // Initialize an instance of Express.js
 const api= require("./routes");
 const app = express();
-const PORT = 3001;
+const PORT = 8080;
 
 
 app.use(express.json());
