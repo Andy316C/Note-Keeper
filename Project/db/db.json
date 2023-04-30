@@ -8,5 +8,10 @@
         "title": "Check daily exchange rate",
         "text": "$NZ $USD $AU",
         "id": "e4eef066-2196-4bc6-bf62-01424cd6efc4"
+    },
+    {
+        "title": "Take the bins out",
+        "text": "Monday and Thursday 6am",
+        "id": "549a6b11-c876-4506-8972-ea0a9543bbd6"
     }
 ]
