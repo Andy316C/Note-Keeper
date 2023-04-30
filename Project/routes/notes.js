@@ -30,5 +30,19 @@ route.post('/', (req, res) => {
   }
 });
 
+route.delete('/:id', (req, res) => {
+  const noteId = req.params.id;
+  readFromFile('./Project/db/db.json')
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+      // Make a new array of all tips except the one with the ID provided in the URL
+      const result = json.filter((idNote) => idNote.id !== noteId);
+      writeToFile('./Project/db/db.json', result);
+
+      // Respond to the DELETE request
+      res.json();
+    });
+});
+
 
 module.exports = route;
