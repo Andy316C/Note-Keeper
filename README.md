@@ -60,21 +60,21 @@
 
   ## Images
   Starting page
-  <img src= '/project/images/starting-page.png'>
+  <img src= 'project/images/starting-page.png'>
   <br>
 
   Saving a Note/Task
-  <img src= '/project/images/saving-task.png'>
+  <img src= 'project/images/saving-task.png'>
   <br>
   
   Reviewing a Note/Task
-  <img src= '/project/images/review-task.png'>
+  <img src= 'project/images/review-task.png'>
   <br>
   
   Node.js command line confirmation of task saved
   <br>
 
-  <img src= '/project/images/saved-data.png'>
+  <img src= 'project/images/saved-data.png'>
   <br>
 
   </div>
