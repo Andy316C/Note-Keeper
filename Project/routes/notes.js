@@ -4,7 +4,7 @@ const { v4: uuidv4 } = require('uuid');
 
 // GET Route for retrieving all the tips
 route.get('/', (req, res) => {
-  readFromFile('./db/db.json').then((data) => res.send(data));
+  readFromFile('./Project/db/db.json').then((data) => res.send(data));
 });
 
 route.post('/', (req, res) => {
@@ -17,11 +17,11 @@ route.post('/', (req, res) => {
       text,
       id: uuidv4(),
     };
-    readFromFile("./db/db.json").then(data => {
+    readFromFile("./Project/db/db.json").then(data => {
       const parsedData = JSON.parse(data);
       parsedData.push(newNote);
       console.log(parsedData);
-      writeToFile('./db/db.json',parsedData);
+      writeToFile('./Project/db/db.json',parsedData);
       res.json(`Note added successfully 🚀`);
     })
     
